@@ -1,4 +1,4 @@
-# 🚴 Training Platform (Work in Progress)
+# 🚴 PeakFlow (Work in Progress)
 
 A full-stack SaaS platform for endurance athletes and coaches.
 

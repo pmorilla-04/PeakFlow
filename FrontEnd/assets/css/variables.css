@@ -1,0 +1,128 @@
+:root{
+    /* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+--font-family: "Inter", sans-serif;
+
+--text-xs: 0.75rem;      /* 12px */
+--text-sm: 0.875rem;     /* 14px */
+--text-base: 1rem;       /* 16px */
+--text-lg: 1.125rem;     /* 18px */
+--text-xl: 1.25rem;      /* 20px */
+--text-2xl: 1.5rem;      /* 24px */
+--text-3xl: 1.875rem;    /* 30px */
+--text-4xl: 2.25rem;     /* 36px */
+
+
+/* ==========================================
+   FONT WEIGHT
+========================================== */
+
+--font-light: 300;
+--font-regular: 400;
+--font-medium: 500;
+--font-semibold: 600;
+--font-bold: 700;
+
+
+/* ==========================================
+   BRAND COLORS
+========================================== */
+
+--color-primary: #2563EB;
+--color-secondary: #10B981;
+--color-accent: #F97316;
+--color-danger: #EF4444;
+
+
+/* ==========================================
+   LIGHT THEME
+========================================== */
+
+--background-light: #F8FAFC;
+--surface-light: #FFFFFF;
+
+--text-primary-light: #0F172A;
+--text-secondary-light: #64748B;
+
+--border-light: #E2E8F0;
+
+
+/* ==========================================
+   DARK THEME
+========================================== */
+
+--background-dark: #0F172A;
+--surface-dark: #1E293B;
+
+--text-primary-dark: #F8FAFC;
+--text-secondary-dark: #94A3B8;
+
+--border-dark: #334155;
+
+
+/* ==========================================
+   SPACING
+========================================== */
+
+--space-1: 4px;
+--space-2: 8px;
+--space-3: 12px;
+--space-4: 16px;
+--space-5: 20px;
+--space-6: 24px;
+--space-8: 32px;
+--space-10: 40px;
+--space-12: 48px;
+--space-16: 64px;
+
+
+/* ==========================================
+   BORDER RADIUS
+========================================== */
+
+--radius-sm: 8px;
+--radius-md: 12px;
+--radius-lg: 16px;
+--radius-xl: 20px;
+--radius-full: 999px;
+
+
+/* ==========================================
+   SHADOWS
+========================================== */
+
+--shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.05);
+--shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+--shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+
+
+/* ==========================================
+   TRANSITIONS
+========================================== */
+
+--transition-fast: 0.2s ease;
+--transition-normal: 0.3s ease;
+
+
+/* ==========================================
+   LAYOUT
+========================================== */
+
+--header-height: 80px;
+--sidebar-width: 280px;
+
+--container-padding: 32px;
+--card-padding: 24px;
+
+
+/* ==========================================
+   Z-INDEX
+========================================== */
+
+--z-dropdown: 100;
+--z-sticky: 200;
+--z-modal: 500;
+--z-toast: 1000;
+}

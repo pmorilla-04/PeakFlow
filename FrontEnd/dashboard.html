@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Global CSS -->
+     <!-- Design system: colors, typography, spacing, shadows, etc. -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+
+    <!-- CSS reset: removes browser default styles -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- General page layout: header, sidebar, containers, grid... -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+
+    <!-- Reusable UI components: buttons, cards, forms, modals... -->
+    <link rel="stylesheet" href="assets/css/components.css">
+
+    <!-- Utility classes: flex, hidden, text-center, margins... -->
+    <link rel="stylesheet" href="assets/css/utilities.css">
+
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/pages/dashboard.css">
+</head>
+<body>
+    <header class="header">
+
+        <!--Left-->
+        <div class="header-left">
+            <div class="page-title">
+                <h1>Dashboard</h1>
+                <p>Wecome back 👋</p>
+            </div>
+            
+
+        </div>
+
+        <!--Center-->
+        <div class="header-center">
+            <form class="search-form">
+                <i data-lucide="search"></i>  
+                <input type="text" placeholder="Search...">
+            </form>
+        </div>
+
+        <!--Right-->
+        <div class="header-right">
+
+            <!-- Language -->
+            <button class="icon-btn">
+                <i data-lucide="languages"></i>
+            </button>
+
+            <!-- Theme -->
+            <button class="icon-btn">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <!-- Notifications -->
+            <button class="icon-btn">
+                <i data-lucide="bell"></i>
+                <span class="notification-dot"></span>
+            </button>
+
+            <!-- Profile -->
+            <button class="profile-btn">
+
+                <div class="profile-info">
+                    <span class="profile-name">Pau</span>
+                    <span class="profile-role">Athlete</span>
+                </div>
+
+                <i data-lucide="chevron-down"></i>
+
+            </button>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
