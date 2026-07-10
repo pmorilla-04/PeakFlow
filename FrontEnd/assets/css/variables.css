@@ -52,14 +52,17 @@
 /* ==========================================
    DARK THEME
 ========================================== */
+[data-theme="dark"]{
+   --background-dark: #0F172A;
+   --surface-dark: #1E293B;
 
---background-dark: #0F172A;
---surface-dark: #1E293B;
+   --text-primary-dark: #F8FAFC;
+   --text-secondary-dark: #94A3B8;
 
---text-primary-dark: #F8FAFC;
---text-secondary-dark: #94A3B8;
+   --border-dark: #334155;
 
---border-dark: #334155;
+}
+
 
 
 /* ==========================================
