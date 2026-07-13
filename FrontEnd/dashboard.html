@@ -30,59 +30,7 @@
     <link rel="stylesheet" href="assets/css/pages/dashboard.css">
 </head>
 <body>
-    <header class="header">
-
-        <!--Left-->
-        <div class="header-left">
-            <div class="page-title">
-                <h1>Dashboard</h1>
-                <p>Wecome back 👋</p>
-            </div>
-            
-
-        </div>
-
-        <!--Center-->
-        <div class="header-center">
-            <form class="search-form">
-                <i data-lucide="search"></i>  
-                <input type="text" placeholder="Search...">
-            </form>
-        </div>
-
-        <!--Right-->
-        <div class="header-right">
-
-            <!-- Language -->
-            <button class="icon-btn">
-                <i data-lucide="languages"></i>
-            </button>
-
-            <!-- Theme -->
-            <button class="icon-btn">
-                <i data-lucide="moon"></i>
-            </button>
-
-            <!-- Notifications -->
-            <button class="icon-btn">
-                <i data-lucide="bell"></i>
-                <span class="notification-dot"></span>
-            </button>
-
-            <!-- Profile -->
-            <button class="profile-btn">
-
-                <div class="profile-info">
-                    <span class="profile-name">Pau</span>
-                    <span class="profile-role">Athlete</span>
-                </div>
-
-                <i data-lucide="chevron-down"></i>
-
-            </button>
-        </div>
-    </header>
-
+    
     <aside class="sidebar">
         <!--LOGO-->
         <div class="sidebar-logo">
@@ -165,10 +113,215 @@
                 </span>
                 
             </div>
-
-        
+       
     </aside>
 
+    <main class="main">
+        <header class="header">
+
+            <!--Left-->
+            <div class="header-left">
+                <div class="page-title">
+                    <h1>Dashboard</h1>
+                    <p>Wecome back 👋</p>
+                </div>
+                
+
+            </div>
+
+            <!--Center-->
+            <div class="header-center">
+                <form class="search-form">
+                    <i data-lucide="search"></i>  
+                    <input type="text" placeholder="Search...">
+                </form>
+            </div>
+
+            <!--Right-->
+            <div class="header-right">
+
+                <!-- Language -->
+                <button class="icon-btn">
+                    <i data-lucide="languages"></i>
+                </button>
+
+                <!-- Theme -->
+                <button class="icon-btn">
+                    <i data-lucide="moon"></i>
+                </button>
+
+                <!-- Notifications -->
+                <button class="icon-btn">
+                    <i data-lucide="bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <!-- Profile -->
+                <button class="profile-btn">
+
+                    <div class="profile-info">
+                        <span class="profile-name">Pau</span>
+                        <span class="profile-role">Athlete</span>
+                    </div>
+
+                    <i data-lucide="chevron-down"></i>
+
+                </button>
+            </div>
+        </header>
+
+        <section class="content">
+                    <!-- ==========================================
+                    KPI CARDS
+            =========================================== -->
+            <section class="kpi-grid">
+                <!--Streak-->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+                        <h3 class="kpi-title">Streak</h3>
+                    <i data-lucide="flame"></i>
+                    </div>
+
+                    <div class="kpi-body">
+                        <span class="kpi-value">18</span>
+                        <span class="kpi-unit">weeks</span>
+                    </div>
+
+                    <div class="kpi-footer">
+                        <i data-lucide="trophy"></i>
+                        <span>Best: 31 weeks</span>
+                    </div>
+                </article>
+
+                <!-- Training Time -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+                        <h3 class="kpi-title">Training Time</h3>
+                        <i data-lucide="clock-3"></i>
+                    </div>
+
+                    <div class="kpi-body">
+                        <span class="kpi-value">12h 35m</span>
+                    </div>
+
+                    <div class="kpi-footer positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+1h 20m vs last week</span>
+                    </div>
+
+                </article>
+
+                <!-- Distance -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+                        <h3 class="kpi-title">Distance</h3>
+                        <i data-lucide="bike"></i>
+                    </div>
+
+                    <div class="kpi-body">
+                        <span class="kpi-value">285</span>
+                        <span class="kpi-unit">km</span>
+                    </div>
+
+                    <div class="kpi-footer positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+42 km vs last week</span>
+                    </div>
+
+                </article>
+
+                <!-- Elevation -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+                        <h3 class="kpi-title">Elevation</h3>
+                        <i data-lucide="mountain"></i>
+                    </div>
+
+                    <div class="kpi-body">
+                        <span class="kpi-value">4,150</span>
+                        <span class="kpi-unit">m</span>
+                    </div>
+
+                    <div class="kpi-footer negative">
+                        <i data-lucide="trending-down"></i>
+                        <span>-350 m vs last week</span>
+                    </div>
+
+                </article>
+
+                <!-- Training Load -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+                        <h3 class="kpi-title">Training Load</h3>
+                        <i data-lucide="zap"></i>
+                    </div>
+
+                    <div class="kpi-body">
+                        <span class="kpi-value">642</span>
+                        <span class="kpi-unit">TSS</span>
+                    </div>
+
+                    <div class="kpi-footer positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+58 TSS vs last week</span>
+                    </div>
+
+                </article>
+
+                <!-- Activities -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+                        <h3 class="kpi-title">Activities</h3>
+                        <i data-lucide="dumbbell"></i>
+                    </div>
+
+                    <div class="kpi-body">
+                        <span class="kpi-value">6 / 7</span>
+                    </div>
+
+                    <div class="kpi-footer positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+1 activity vs last week</span>
+                    </div>
+
+                </article>
+
+                <!-- Plan Completion -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+                        <h3 class="kpi-title">Plan Completion</h3>
+                        <i data-lucide="circle-check-big"></i>
+                    </div>
+
+                    <div class="kpi-body">
+                        <span class="kpi-value">92%</span>
+                    </div>
+
+                    <div class="kpi-footer positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+4% vs last week</span>
+                    </div>
+
+                </article>
+
+            </section>
+        </section>
+
+    </main>
+ 
+
+
+    
+
+    
+     
 
 
 

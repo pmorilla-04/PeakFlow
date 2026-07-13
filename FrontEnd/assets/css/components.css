@@ -224,3 +224,111 @@
 
     text-align: center;
 }
+
+/* ==========================================
+   KPI CARD
+========================================== */
+
+.kpi-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 170px;
+
+    padding: var(--space-6);
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-x1);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition-fast);
+
+}
+
+.kpi-card:hover{
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ==========================================
+   KPI HEADER
+========================================== */
+.kpi-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kpi-title{
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+
+    color: var(--text-secondary);
+}
+
+.kpi-header svg{
+    width: 22px;
+    height: 22px;
+
+    color: var(--color-primary);
+}
+
+/* ==========================================
+   KPI BODY
+========================================== */
+.kpi-body{
+    margin: var(--space-5) 0;
+}
+
+.kpi-value{
+    font-size: var(--text-4x1);
+    font-weight: var(--font-bold);
+
+    color: var(--text-primary-light);
+}
+
+.kpi-unit{
+    margin-left: var(--space-2);
+
+    font-size: var(--text-base);
+
+    color: var(--text-secondary-light);
+}
+/* ==========================================
+   KPI FOOTER
+========================================== */
+/* ==========================================
+   KPI FOOTER
+========================================== */
+
+.kpi-footer{
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+
+    font-size: var(--text-sm);
+}
+
+.kpi-trend{
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+
+    font-weight: var(--font-medium);
+}
+
+.kpi-trend.positive{
+    color: var(--color-secondary);
+}
+
+.kpi-trend.negative{
+    color: var(--color-danger);
+}
+
+.kpi-period{
+    color: var(--text-secondary);
+}
