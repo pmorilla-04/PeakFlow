@@ -301,9 +301,6 @@
 /* ==========================================
    KPI FOOTER
 ========================================== */
-/* ==========================================
-   KPI FOOTER
-========================================== */
 
 .kpi-footer{
     display: flex;
@@ -331,4 +328,85 @@
 
 .kpi-period{
     color: var(--text-secondary);
+}
+
+/* ==========================================
+   CARD
+========================================== */
+.card{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-x1);
+
+    box-shadow: var(--shadow-sm);
+
+    overflow: hidden;
+    transition: var(--transition-fast);
+}
+
+.card:hover{
+    box-shadow: var(--shadow-md);
+}
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--space-5) var(--space-6);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.card-header h2{
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+
+    color: var(--text-primary);
+}
+
+/* ==========================================
+   CARD BODY
+========================================== */
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+
+    padding: var(--space-6);
+
+    flex: 1;
+}
+
+/* ==========================================
+   CARD FOOTER
+========================================== */
+
+.card-footer{
+    padding: var(--space-5) var(--space-6);
+
+    border-top: 1px solid var(--border);
+}
+
+.card-footer a{
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+
+    color: var(--color-primary);
+
+    text-decoration: none;
+
+    transition: var(--transition-fast);
+}
+
+.card-footer a:hover{
+    opacity: .8;
 }

@@ -1,145 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
 
     <!-- Global CSS -->
-     <!-- Design system: colors, typography, spacing, shadows, etc. -->
-    <link rel="stylesheet" href="assets/css/variables.css">
+    <!-- Design system: colors, typography, spacing, shadows, etc. -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
 
     <!-- CSS reset: removes browser default styles -->
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
 
     <!-- General page layout: header, sidebar, containers, grid... -->
-    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/layout.css" />
 
     <!-- Reusable UI components: buttons, cards, forms, modals... -->
-    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/components.css" />
 
     <!-- Utility classes: flex, hidden, text-center, margins... -->
-    <link rel="stylesheet" href="assets/css/utilities.css">
-
+    <link rel="stylesheet" href="assets/css/utilities.css" />
 
     <!-- Page CSS -->
-    <link rel="stylesheet" href="assets/css/pages/dashboard.css">
+    <link rel="stylesheet" href="assets/css/pages/dashboard.css" />
 </head>
+
 <body>
-    
     <aside class="sidebar">
         <!--LOGO-->
         <div class="sidebar-logo">
             <a href="dashboard.html">
-                <img src="assets/images/01_LOGO_.png" alt="Logo">
+                <img src="assets/images/01_LOGO_.png" alt="Logo" />
             </a>
         </div>
-            <!--NAVEGATION-->
-             <nav class="sidebar-nav">
+        <!--NAVEGATION-->
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="dashboard.html" class="nav-link active">
+                        <i data-lucide="layout-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
 
-                <ul class="nav-list">
+                <li>
+                    <a href="calendar.html" class="nav-link">
+                        <i data-lucide="calendar"></i>
+                        <span>Calendar</span>
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="dashboard.html" class="nav-link active">
-                            <i data-lucide="layout-dashboard"></i>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="activities.html" class="nav-link">
+                        <i data-lucide="bike"></i>
+                        <span>Activities</span>
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="calendar.html" class="nav-link">
-                            <i data-lucide="calendar"></i>
-                            <span>Calendar</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="analysis.html" class="nav-link">
+                        <i data-lucide="chart-column"></i>
+                        <span>Analysis</span>
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="activities.html" class="nav-link">
-                            <i data-lucide="bike"></i>
-                            <span>Activities</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="goals.html" class="nav-link">
+                        <i data-lucide="target"></i>
+                        <span>Goals</span>
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="analysis.html" class="nav-link">
-                            <i data-lucide="chart-column"></i>
-                            <span>Analysis</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="reports.html" class="nav-link">
+                        <i data-lucide="file-text"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="goals.html" class="nav-link">
-                            <i data-lucide="target"></i>
-                            <span>Goals</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="ai-coach.html" class="nav-link">
+                        <i data-lucide="sparkles"></i>
+                        <span>AI Coach</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-                    <li>
-                        <a href="reports.html" class="nav-link">
-                            <i data-lucide="file-text"></i>
-                            <span>Reports</span>
-                        </a>
-                    </li>
+        <div class="sidebar-footer">
+            <a href="settings.html" class="nav-link">
+                <i data-lucide="settings"></i>
+                <span>Settings</span>
+            </a>
 
-                    <li>
-                        <a href="ai-coach.html" class="nav-link">
-                            <i data-lucide="sparkles"></i>
-                            <span>AI Coach</span>
-                        </a>
-                    </li>
+            <a href="profile.html" class="nav-link">
+                <i data-lucide="user"></i>
+                <span>Profile</span>
+            </a>
 
-                </ul>
-
-            </nav>
-            
-            <div class="sidebar-footer">
-
-                <a href="settings.html" class="nav-link">
-                    <i data-lucide="settings"></i>
-                    <span>Settings</span>
-                </a>
-
-                <a href="profile.html" class="nav-link">
-                    <i data-lucide="user"></i>
-                    <span>Profile</span>
-                </a>
-
-                <span class="sidebar-version">
-                    v1.0.0
-                </span>
-                
-            </div>
-       
+            <span class="sidebar-version"> v1.0.0 </span>
+        </div>
     </aside>
 
     <main class="main">
         <header class="header">
-
             <!--Left-->
             <div class="header-left">
                 <div class="page-title">
                     <h1>Dashboard</h1>
                     <p>Wecome back 👋</p>
                 </div>
-                
-
             </div>
 
             <!--Center-->
             <div class="header-center">
                 <form class="search-form">
-                    <i data-lucide="search"></i>  
-                    <input type="text" placeholder="Search...">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search..." />
                 </form>
             </div>
 
             <!--Right-->
             <div class="header-right">
-
                 <!-- Language -->
                 <button class="icon-btn">
                     <i data-lucide="languages"></i>
@@ -158,29 +146,26 @@
 
                 <!-- Profile -->
                 <button class="profile-btn">
-
                     <div class="profile-info">
                         <span class="profile-name">Pau</span>
                         <span class="profile-role">Athlete</span>
                     </div>
 
                     <i data-lucide="chevron-down"></i>
-
                 </button>
             </div>
         </header>
 
         <section class="content">
-                    <!-- ==========================================
+            <!-- ==========================================
                     KPI CARDS
             =========================================== -->
             <section class="kpi-grid">
                 <!--Streak-->
                 <article class="kpi-card">
-
                     <div class="kpi-header">
                         <h3 class="kpi-title">Streak</h3>
-                    <i data-lucide="flame"></i>
+                        <i data-lucide="flame"></i>
                     </div>
 
                     <div class="kpi-body">
@@ -196,7 +181,6 @@
 
                 <!-- Training Time -->
                 <article class="kpi-card">
-
                     <div class="kpi-header">
                         <h3 class="kpi-title">Training Time</h3>
                         <i data-lucide="clock-3"></i>
@@ -210,12 +194,10 @@
                         <i data-lucide="trending-up"></i>
                         <span>+1h 20m vs last week</span>
                     </div>
-
                 </article>
 
                 <!-- Distance -->
                 <article class="kpi-card">
-
                     <div class="kpi-header">
                         <h3 class="kpi-title">Distance</h3>
                         <i data-lucide="bike"></i>
@@ -230,12 +212,10 @@
                         <i data-lucide="trending-up"></i>
                         <span>+42 km vs last week</span>
                     </div>
-
                 </article>
 
                 <!-- Elevation -->
                 <article class="kpi-card">
-
                     <div class="kpi-header">
                         <h3 class="kpi-title">Elevation</h3>
                         <i data-lucide="mountain"></i>
@@ -250,12 +230,10 @@
                         <i data-lucide="trending-down"></i>
                         <span>-350 m vs last week</span>
                     </div>
-
                 </article>
 
                 <!-- Training Load -->
                 <article class="kpi-card">
-
                     <div class="kpi-header">
                         <h3 class="kpi-title">Training Load</h3>
                         <i data-lucide="zap"></i>
@@ -270,12 +248,10 @@
                         <i data-lucide="trending-up"></i>
                         <span>+58 TSS vs last week</span>
                     </div>
-
                 </article>
 
                 <!-- Activities -->
                 <article class="kpi-card">
-
                     <div class="kpi-header">
                         <h3 class="kpi-title">Activities</h3>
                         <i data-lucide="dumbbell"></i>
@@ -289,12 +265,10 @@
                         <i data-lucide="trending-up"></i>
                         <span>+1 activity vs last week</span>
                     </div>
-
                 </article>
 
                 <!-- Plan Completion -->
                 <article class="kpi-card">
-
                     <div class="kpi-header">
                         <h3 class="kpi-title">Plan Completion</h3>
                         <i data-lucide="circle-check-big"></i>
@@ -308,31 +282,160 @@
                         <i data-lucide="trending-up"></i>
                         <span>+4% vs last week</span>
                     </div>
-
                 </article>
+            </section>
 
+            <!-- ==========================================
+                DASHBOARD GRID
+            ========================================== -->
+                 <section class="dashboard-grid">
+                <!-- ==========================================
+                    LEFT COLUMN
+                =========================================== -->
+                <aside class="dashboard-left">
+                    <!-- ==========================================
+                        UPCOMING EVENTS
+                    =========================================== -->
+                    <article class="card upcoming-events">
+                        <div class="card-header">
+                            <h2>Upcoming Events</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="event-list">
+                                <article class="event-item">
+                                    <div class="event-info">
+                                        <h3 class="event-name">Marxa Purito</h3>
+
+                                        <span class="event-priority priority-a">
+                                            Priority A
+                                        </span>
+                                    </div>
+
+                                    <div class="event-details">
+                                        <span>24 Aug 2026</span>
+                                        <span>18 days remaining</span>
+                                    </div>
+                                </article>
+
+                                <article class="event-item">
+                                    <div class="event-info">
+                                        <h3 class="event-name">Gravel Girona</h3>
+
+                                        <span class="event-priority priority-b">
+                                            Priority B
+                                        </span>
+                                    </div>
+
+                                    <div class="event-details">
+                                        <span>12 Sep 2026</span>
+                                        <span>37 days remaining</span>
+                                    </div>
+
+                                    <div class="card-footer">
+                                         <a href="goals.html"> View all events </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ==========================================
+                        GOALS
+                    =========================================== -->
+                    <article class="card goals">
+                        <div class="card-header">
+                            <h2>Goals</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <!-- Goal -->
+                            <div class="goal-item">
+                                <div class="goal-header">
+                                    <span>Annual Distance</span>
+                                    <span>4,200 / 8,000 km</span>
+                                </div>
+
+                                <div class="goal-progress">
+                                    <div class="goal-progress-bar" style="width: 52%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Goal -->
+                            <div class="goal-item">
+                                <div class="goal-header">
+                                    <span>Annual Elevation</span>
+                                    <span>53,000 / 80,000 m</span>
+                                </div>
+
+                                <div class="goal-progress">
+                                    <div class="goal-progress-bar" style="width: 66%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Goal -->
+                            <div class="goal-item">
+                                <div class="goal-header">
+                                    <span>FTP</span>
+                                    <span>310 / 330 W</span>
+                                </div>
+
+                                <div class="goal-progress">
+                                    <div class="goal-progress-bar" style="width: 93%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="goals.html"> View all goals </a>
+                        </div>
+                    </article>
+
+                    <!-- ==========================================
+                        UPCOMING WORKOUTS
+                    =========================================== -->
+                    <article class="card upcoming-workouts">
+                        <div class="card-header">
+                            <h2>Upcoming Workouts</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <article class="workout-item">
+                                <h3>Threshold Intervals</h3>
+
+                                <p>1h 30m • 95 TSS · Today</p>
+                            </article>
+
+                            <article class="workout-item">
+                                <h3>Recovery Ride</h3>
+
+                                <p>45 min • 25 TSS · Thursday</p>
+                            </article>
+
+                            <article class="workout-item">
+                                <h3>Long Ride</h3>
+
+                                <p>5h • 260 TSS · Saturday</p>
+                            </article>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="calendar.html"> Go to Calendar </a>
+                        </div>
+                    </article>
+                </aside>
+
+                <!-- CENTER COLUMN -->
+
+                <!-- RIGHT COLUMN -->
             </section>
         </section>
-
     </main>
- 
-
-
-    
-
-    
-     
-
-
-
-
-
-
-
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
     </script>
 </body>
+
 </html>
