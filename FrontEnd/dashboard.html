@@ -288,7 +288,7 @@
             <!-- ==========================================
                 DASHBOARD GRID
             ========================================== -->
-                 <section class="dashboard-grid">
+            <section class="dashboard-grid">
                 <!-- ==========================================
                     LEFT COLUMN
                 =========================================== -->
@@ -333,7 +333,9 @@
                                     </div>
 
                                     <div class="card-footer">
-                                         <a href="goals.html"> View all events </a>
+                                        <a href="goals.html"> View all events
+                                            <i data-lucide="arrow-right"></i>
+                                        </a>
                                     </div>
                                 </article>
                             </div>
@@ -387,7 +389,10 @@
                         </div>
 
                         <div class="card-footer">
-                            <a href="goals.html"> View all goals </a>
+                            <a href="goals.html"> View all goals
+                                <i data-lucide="arrow-right"></i>
+
+                            </a>
                         </div>
                     </article>
 
@@ -420,14 +425,283 @@
                         </div>
 
                         <div class="card-footer">
-                            <a href="calendar.html"> Go to Calendar </a>
+                            <a href="calendar.html"> Go to Calendar
+                                <i data-lucide="arrow-right"></i>
+
+                            </a>
                         </div>
                     </article>
                 </aside>
 
                 <!-- CENTER COLUMN -->
+                <section class="dashboard-center">
+                    <!-- ==========================================
+                        RECENT ACTIVITIES
+                    =========================================== -->
+
+                    <article class="card recent-activites">
+
+                        <div class="card-header">
+                            <h2>Recent activities</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <article class="activity-item">
+                                <div class="activity-header">
+                                    <h3 class="activity-name">Endurance Ride</h3>
+                                    <span class="activity-date">Today</span>
+                                </div>
+
+                                <div class="activity-metrics">
+                                    <span>95 km</span>
+                                    <span>3h 12m</span>
+                                    <span>195 TSS</span>
+                                    <span>0.76 IF</span>
+                                </div>
+
+                                <p class="activity-comment">
+                                    Good senstions during the climb
+                                </p>
+                            </article>
+
+                            <article class="activity-item">
+
+                                <div class="activity-header">
+                                    <h3 class="activity-name">Threshold Intervals</h3>
+                                    <span class="activity-date">Yesterday</span>
+                                </div>
+
+                                <div class="activity-metrics">
+                                    <span>52 km</span>
+                                    <span>1h 35m</span>
+                                    <span>102 TSS</span>
+                                    <span>IF 0.92</span>
+                                </div>
+
+                                <p class="activity-comment">
+                                    Legs felt strong.
+                                </p>
+
+                            </article>
+                        </div>
+                        <div class="card-footer">
+                            <a href="activities.html">View all activities
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- ==========================================
+                        FITNESS & FORM
+                    =========================================== -->
+                    <article class="card fitness-form">
+
+                        <div class="card-header">
+                            <h2>Fitness & Form</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="fitness-metrics">
+                                <div class="fitness-item">
+                                    <span class="fitness-label">CTL</span>
+                                    <span class="fitness-value">72</span>
+                                </div>
+
+                                <div class="fitness-item">
+                                    <span class="fitness-label">ATL</span>
+                                    <span class="fitness-value">80</span>
+                                </div>
+
+                                <div class="fitness-item">
+                                    <span class="fitness-label">TSB</span>
+                                    <span class="fitness-value">8</span>
+                                </div>
+                            </div>
+
+                            <div class="fitness-chart"></div>
+                            <div class="card-footer">
+                                <a href="analytics.html">View all Analytics
+                                    <i data-lucide="arrow-right"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ==========================================
+                        RECENT RECORDS
+                    =========================================== -->
+                    <article class="card recent-records">
+                        <div class="card-header">
+                            <h2>Recent Records</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <article class="record-item">
+
+                                <div class="record-header">
+                                    <span class="record-duration">5 sec</span>
+                                    <span class="record-date">Yesterday</span>
+                                </div>
+
+                                <div class="record-value">
+                                    1028 W
+                                </div>
+
+                            </article>
+
+                            <article class="record-item">
+
+                                <div class="record-header">
+                                    <span class="record-duration">5 min</span>
+                                    <span class="record-date">3 days ago</span>
+                                </div>
+
+                                <div class="record-value">
+                                    412 W
+                                </div>
+
+                            </article>
+
+                            <article class="record-item">
+
+                                <div class="record-header">
+                                    <span class="record-duration">20 min</span>
+                                    <span class="record-date">Last week</span>
+                                </div>
+
+                                <div class="record-value">
+                                    318 W
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="analysis.html">View all records
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+
+
+                    </article>
+                </section>
 
                 <!-- RIGHT COLUMN -->
+
+                <section class="dashboard-right">
+
+                    <!-- ==========================================
+                        AI COACH
+                    =========================================== -->
+                    <article class="card ai-coach">
+
+                        <!-- Header -->
+                        <div class="card-header">
+                            <h2>🤖 AI Coach</h2>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body">
+
+                            <!-- Today's Status -->
+                            <section class="ai-section">
+
+                                <h3 class="ai-title">Today's Status</h3>
+
+                                <p class="ai-text">
+                                    You're ready for today's workout.
+                                </p>
+
+                            </section>
+
+                            <!-- Smart Summary -->
+                            <section class="ai-section">
+
+                                <h3 class="ai-title">Smart Summary</h3>
+
+                                <p class="ai-text">
+                                    Your training load is progressing as planned and you're maintaining a good balance
+                                    between fitness and recovery.
+                                </p>
+
+                            </section>
+
+                            <!-- Daily Insights -->
+                            <section class="ai-section">
+
+                                <h3 class="ai-title">Today's Insights</h3>
+
+                                <ul class="ai-list">
+                                    <li>✔ CTL has increased this week.</li>
+                                    <li>✔ Sleep quality has improved.</li>
+                                    <li>✔ You're on track to reach your monthly distance goal.</li>
+                                </ul>
+
+                            </section>
+
+                            <!-- Alerts -->
+                            <section class="ai-section">
+
+                                <h3 class="ai-title">Alerts</h3>
+
+                                <ul class="ai-list">
+                                    <li>⚠ ATL is higher than usual.</li>
+                                </ul>
+
+                            </section>
+
+                            <!-- Recommendations -->
+                            <section class="ai-section">
+
+                                <h3 class="ai-title">Recommendations</h3>
+
+                                <ul class="ai-list">
+                                    <li>Take enough carbohydrates before today's session.</li>
+                                    <li>Focus on recovery after training.</li>
+                                </ul>
+
+                            </section>
+
+                            <!-- Quick Questions -->
+                            <section class="ai-section">
+
+                                <h3 class="ai-title">Quick Questions</h3>
+
+                                <div class="ai-questions">
+
+                                    <button class="question-btn">
+                                        Why am I tired?
+                                    </button>
+
+                                    <button class="question-btn">
+                                        Should I increase FTP?
+                                    </button>
+
+                                    <button class="question-btn">
+                                        How is my fitness?
+                                    </button>
+
+                                </div>
+
+                            </section>
+
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="card-footer">
+
+                            <a href="ai-coach.html">
+                                Ask AI
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </section>
             </section>
         </section>
     </main>
