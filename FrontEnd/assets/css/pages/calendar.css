@@ -7,4 +7,273 @@
     padding: var(--space-6);
 
     box-shadow: var(--shadow-sm);
+
+    width: 100%;
+}
+
+/* ==========================================
+   CALENDAR TOOLBAR
+========================================== */
+.calendar-toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: var(--space-6);
+}
+
+.calendar-toolbar-left,
+.calendar-toolbar-right{
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+/* ==========================================
+   CALENDAR TITLE
+========================================== */
+.calendar-title{
+    min-width: 180px;
+
+    text-align: center;
+
+    font-size: var(--text-2x1);
+    font-weight: var(--font-bold);
+
+    color: var(--text-primary);
+}
+
+/* ==========================================
+   CALENDAR LAYOUT
+========================================== */
+.calendar-layout{
+
+    display:grid;
+
+    grid-template-columns: 1fr 320px;
+
+    gap: var(--space-6);
+
+    align-items:start;
+
+}
+
+/* ==========================================
+   WEEK SUMMARY
+========================================== */
+
+.week-summary{
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-sm);
+
+    padding: var(--space-6);
+
+    position: sticky;
+
+    top: calc(var(--header-height) + var(--space-6));
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+
+}
+
+
+
+/* ==========================================
+   SUMMARY CARD
+========================================== */
+
+.summary-card{
+
+    padding: var(--space-4);
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+}
+
+.summary-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom: var(--space-3);
+
+    font-weight: var(--font-semibold);
+
+}
+
+.summary-stats{
+
+    display:grid;
+
+    gap: var(--space-2);
+
+    font-size: var(--text-sm);
+
+    color: var(--text-secondary);
+
+}
+
+/* ==========================================
+   PROGRESS
+========================================== */
+
+.progress-bar{
+
+    height:8px;
+
+    margin-top: var(--space-3);
+
+    overflow:hidden;
+
+    background: var(--border);
+
+    border-radius:999px;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    background: var(--color-primary);
+
+    border-radius:999px;
+
+}
+
+/* ==========================================
+   CALENDAR WRAPPER
+========================================== */
+
+.calendar-wrapper{
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-sm);
+
+    padding: var(--space-6);
+}
+
+/* ==========================================
+   FULLCALENDAR TYPOGRAPHY
+========================================== */
+
+.fc{
+    font-family: var(--font-family);
+    color: var(--text-primary);
+}
+
+/* ==========================================
+   DAYS HEADER
+========================================== */
+
+.fc-col-header-cell{
+
+    background: var(--background);
+
+    padding: var(--space-3) 0;
+
+    border-color: var(--border);
+}
+
+.fc-col-header-cell-cushion{
+
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+
+    color: var(--text-secondary);
+
+    text-decoration: none;
+}
+
+/* ==========================================
+   DAY CELLS
+========================================== */
+
+.fc-daygrid-day{
+
+    min-height: 150px;
+
+    transition: var(--transition-fast);
+}
+
+.fc-daygrid-day:hover{
+
+    background: rgba(37,99,235,.05);
+
+}
+
+/* ==========================================
+   TODAY
+========================================== */
+
+.fc-day-today{
+
+    background: rgba(37,99,235,.08) !important;
+
+}
+
+.fc-daygrid-day-number{
+
+    padding: var(--space-2);
+
+    font-size: var(--text-sm);
+
+    font-weight: var(--font-semibold);
+
+    color: var(--text-primary);
+
+    text-decoration: none;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th{
+
+    border-color: var(--border);
+
+}
+
+.fc-scrollgrid{
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    border-color: var(--border);
+
+}
+
+.fc-event{
+
+    border: none;
+
+    border-radius: var(--radius-md);
+
+    padding: 4px 8px;
+
+    font-size: var(--text-xs);
+
+    font-weight: var(--font-medium);
+
+}
+
+.fc a{
+    text-decoration: none;
 }
