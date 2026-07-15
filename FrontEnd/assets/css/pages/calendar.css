@@ -1,0 +1,10 @@
+#calendar{
+
+    background: var(--surface);
+
+    border-radius: var(--radius-xl);
+
+    padding: var(--space-6);
+
+    box-shadow: var(--shadow-sm);
+}
