@@ -200,140 +200,137 @@
         <!-- ==========================================
                 CONTENT
             =========================================== -->
-        <section class="content">
+        <!-- Calendar Toolbar -->
+        <div class="calendar-toolbar">
 
-            <!-- Calendar Toolbar -->
-            <section class="calendar-toolbar">
+            <div class="calendar-toolbar-left">
 
-                <div class="calendar-toolbar-left">
-
-                    <button class="icon-btn">
+                <div class="calendar-navigation">
+                    <button id="prev-month" class="icon-btn">
                         <i data-lucide="chevron-left"></i>
                     </button>
 
-                    <h2 class="calendar-title">
-                        July 2026
-                    </h2>
-
-                    <button class="icon-btn">
+                    <button id="next-month" class="icon-btn">
                         <i data-lucide="chevron-right"></i>
                     </button>
+                </div>
+
+                <h2 id="calendar-title" class="calendar-title"></h2>
+
+            </div>
+
+            <div class="calendar-toolbar-right">
+                <button id="today-btn" class="secondary-btn">
+                    <i data-lucide="calendar-days"></i>
+                    Today
+                </button>
+            </div>
+
+        </div>
+
+        <section class="calendar-layout">
+
+            <!-- Calendar -->
+            <div class="calendar-wrapper">
+
+                <div id="calendar"></div>
+
+            </div>
+
+            <!-- Week Summary -->
+            <aside class="week-summary">
+
+                <h3 class="section-title">Week Summary</h3>
+
+                <!-- Road -->
+                <div class="summary-card">
+
+                    <div class="summary-header">
+                        <span>🚴 Road</span>
+                    </div>
+
+                    <div class="summary-stats">
+                        <span>8h 25m</span>
+                        <span>285 km</span>
+                        <span>4,150 m</span>
+                        <span>642 TSS</span>
+                    </div>
 
                 </div>
 
-                <div class="calendar-toolbar-right">
+                <!-- MTB -->
+                <div class="summary-card">
 
-                    <button class="secondary-btn">
-                        Today
-                    </button>
+                    <div class="summary-header">
+                        <span>🚵 MTB</span>
+                    </div>
+
+                    <div class="summary-stats">
+                        <span>2h 10m</span>
+                        <span>38 km</span>
+                        <span>1,120 m</span>
+                        <span>180 TSS</span>
+                    </div>
 
                 </div>
 
-            </section>
+                <!-- Running -->
+                <div class="summary-card">
 
-            <section class="calendar-layout">
+                    <div class="summary-header">
+                        <span>🏃 Running</span>
+                    </div>
 
-                <!-- Calendar -->
-                <div class="calendar-wrapper">
-
-                    <div id="calendar"></div>
+                    <div class="summary-stats">
+                        <span>45 min</span>
+                        <span>9.6 km</span>
+                        <span>92 TSS</span>
+                    </div>
 
                 </div>
 
-                <!-- Week Summary -->
-                <aside class="week-summary">
+                <!-- Gym -->
+                <div class="summary-card">
 
-                    <h3 class="section-title">Week Summary</h3>
-
-                    <!-- Road -->
-                    <div class="summary-card">
-
-                        <div class="summary-header">
-                            <span>🚴 Road</span>
-                        </div>
-
-                        <div class="summary-stats">
-                            <span>8h 25m</span>
-                            <span>285 km</span>
-                            <span>4,150 m</span>
-                            <span>642 TSS</span>
-                        </div>
-
+                    <div class="summary-header">
+                        <span>🏋️ Gym</span>
                     </div>
 
-                    <!-- MTB -->
-                    <div class="summary-card">
-
-                        <div class="summary-header">
-                            <span>🚵 MTB</span>
-                        </div>
-
-                        <div class="summary-stats">
-                            <span>2h 10m</span>
-                            <span>38 km</span>
-                            <span>1,120 m</span>
-                            <span>180 TSS</span>
-                        </div>
-
+                    <div class="summary-stats">
+                        <span>2 Sessions</span>
                     </div>
 
-                    <!-- Running -->
-                    <div class="summary-card">
+                </div>
 
-                        <div class="summary-header">
-                            <span>🏃 Running</span>
-                        </div>
+                <!-- Plan -->
+                <div class="summary-card">
 
-                        <div class="summary-stats">
-                            <span>45 min</span>
-                            <span>9.6 km</span>
-                            <span>92 TSS</span>
-                        </div>
-
+                    <div class="summary-header">
+                        <span>Plan Completion</span>
+                        <span>92%</span>
                     </div>
 
-                    <!-- Gym -->
-                    <div class="summary-card">
-
-                        <div class="summary-header">
-                            <span>🏋️ Gym</span>
-                        </div>
-
-                        <div class="summary-stats">
-                            <span>2 Sessions</span>
-                        </div>
-
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:92%;"></div>
                     </div>
 
-                    <!-- Plan -->
-                    <div class="summary-card">
+                </div>
 
-                        <div class="summary-header">
-                            <span>Plan Completion</span>
-                            <span>92%</span>
-                        </div>
+                <!-- Load -->
+                <div class="summary-card">
 
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width:92%;"></div>
-                        </div>
-
+                    <div class="summary-header">
+                        <span>Training Load</span>
+                        <span>🟢 Optimal</span>
                     </div>
 
-                    <!-- Load -->
-                    <div class="summary-card">
+                    <small>Within the planned range for this week.</small>
 
-                        <div class="summary-header">
-                            <span>Training Load</span>
-                            <span>🟢 Optimal</span>
-                        </div>
+                </div>
 
-                        <small>Within the planned range for this week.</small>
+            </aside>
 
-                    </div>
-
-                </aside>
-
-            </section>
+        </section>
 
         </section>
 
@@ -358,8 +355,36 @@
 
             });
 
-            calendar.render();
+            function updateCalendarTitle() {
+                document.getElementById("calendar-title").textContent =
+                    calendar.view.title;
+            }
 
+            calendar.render();
+            updateCalendarTitle();
+
+            document.getElementById("prev-month").addEventListener("click", () => {
+
+                calendar.prev();
+
+                updateCalendarTitle();
+
+            });
+
+            document.getElementById("today-btn").addEventListener("click", () => {
+
+                calendar.today();
+
+                updateCalendarTitle();
+
+            });
+            document.getElementById("next-month").addEventListener("click", () => {
+
+                calendar.next();
+
+                updateCalendarTitle();
+
+            });
         });
     </script>
 

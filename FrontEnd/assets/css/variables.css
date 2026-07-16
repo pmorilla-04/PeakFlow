@@ -35,6 +35,15 @@
 --color-accent: #F97316;
 --color-danger: #EF4444;
 
+/* ==========================================
+   STATE COLORS
+========================================== */
+
+--color-primary-soft: rgba(37, 99, 235, 0.05);
+--color-primary-light: rgba(37, 99, 235, 0.08);
+--color-primary-hover: rgba(37, 99, 235, 0.12);
+
+--color-surface-muted: rgba(15, 23, 42, 0.015);
 
 /* ==========================================
    LIGHT THEME
@@ -60,6 +69,13 @@
 --text-secondary-dark: #94A3B8;
 
 --border-dark: #334155;
+
+
+--color-primary-soft: rgba(37, 99, 235, 0.10);
+--color-primary-light: rgba(37, 99, 235, 0.18);
+--color-primary-hover: rgba(37, 99, 235, 0.25);
+
+--color-surface-muted: rgba(255,255,255,.03);
 
 }
 
