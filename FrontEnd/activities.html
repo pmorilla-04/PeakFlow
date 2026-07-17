@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
+    <title>Activites</title>
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.css" rel="stylesheet">
 
     <!--Google fonts-->
@@ -30,10 +30,12 @@
     <link rel="stylesheet" href="assets/css/utilities.css" />
 
     <!-- Page CSS -->
-    <link rel="stylesheet" href="assets/css/pages/calendar.css" />
+    <link rel="stylesheet" href="assets/css/pages/activites.css" />
 </head>
 
 <body>
+
+
     <aside class="sidebar">
 
         <!-- ==========================================
@@ -60,7 +62,7 @@
                 </li>
 
                 <li>
-                    <a href="calendar.html" class="nav-link active">
+                    <a href="calendar.html" class="nav-link">
                         <i data-lucide="calendar"></i>
                         <span>Calendar</span>
                     </a>
@@ -74,7 +76,7 @@
                 </li>
 
                 <li>
-                    <a href="activities.html" class="nav-link">
+                    <a href="activities.html" class="nav-link active">
                         <i data-lucide="bike"></i>
                         <span>Activities</span>
                     </a>
@@ -154,7 +156,7 @@
             <!--Left-->
             <div class="header-left">
                 <div class="page-title">
-                    <h1>Calendar</h1>
+                    <h1>Activites</h1>
                     <p>Wecome back 👋</p>
                 </div>
             </div>
@@ -198,149 +200,138 @@
         </header>
 
         <!-- ==========================================
-                CONTENT
-            =========================================== -->
-        <!-- Calendar Toolbar -->
-        <div class="calendar-toolbar">
+            FILTERS
+        ========================================== -->
+        <section class="activities-filters">
+            <div class="filters-left">
+                <!--SPORT-->
+                <select class="filter-select">
+                    <option>All sports</option>
+                    <option>Road cycling</option>
+                    <option>MTB</option>
+                    <option>Running</option>
+                    <option>Gym</option>
+                    <option>Ski</option>
+                    <option>Others</option>
+                </select>
 
-            <div class="calendar-toolbar-left">
-
-                <div class="calendar-navigation">
-                    <button id="prev-month" class="icon-btn">
-                        <i data-lucide="chevron-left"></i>
-                    </button>
-
-                    <button id="next-month" class="icon-btn">
-                        <i data-lucide="chevron-right"></i>
-                    </button>
-                </div>
-
-                <h2 id="calendar-title" class="calendar-title"></h2>
-
+                <!--YEAR-->
+                <select class="filter-select">
+                    <option>2026</option>
+                    <option>2025</option>
+                    <option>2024</option>
+                </select>
             </div>
 
-            <div class="calendar-toolbar-right">
-                <button id="today-btn" class="secondary-btn">
-                    <i data-lucide="calendar-days"></i>
-                    Today
-                </button>
+            <div class="filters-right">
+                <form class="search-form">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search activity...">
+                </form>
             </div>
-
-        </div>
-
-        <section class="calendar-layout">
-
-            <!-- Calendar -->
-            <div class="calendar-wrapper">
-
-                <div id="calendar"></div>
-
-            </div>
-
-            <!-- Week Summary -->
-            <aside class="week-summary">
-
-                <h3 class="section-title">Week Summary</h3>
-
-                <!-- Road -->
-                <div class="summary-card">
-
-                    <div class="summary-header">
-                        <span>🚴 Road</span>
-                    </div>
-
-                    <div class="summary-stats">
-                        <span>8h 25m</span>
-                        <span>285 km</span>
-                        <span>4,150 m</span>
-                        <span>642 TSS</span>
-                    </div>
-
-                </div>
-
-                <!-- MTB -->
-                <div class="summary-card">
-
-                    <div class="summary-header">
-                        <span>🚵 MTB</span>
-                    </div>
-
-                    <div class="summary-stats">
-                        <span>2h 10m</span>
-                        <span>38 km</span>
-                        <span>1,120 m</span>
-                        <span>180 TSS</span>
-                    </div>
-
-                </div>
-
-                <!-- Running -->
-                <div class="summary-card">
-
-                    <div class="summary-header">
-                        <span>🏃 Running</span>
-                    </div>
-
-                    <div class="summary-stats">
-                        <span>45 min</span>
-                        <span>9.6 km</span>
-                        <span>92 TSS</span>
-                    </div>
-
-                </div>
-
-                <!-- Gym -->
-                <div class="summary-card">
-
-                    <div class="summary-header">
-                        <span>🏋️ Gym</span>
-                    </div>
-
-                    <div class="summary-stats">
-                        <span>2 Sessions</span>
-                    </div>
-
-                </div>
-
-                <!-- Plan -->
-                <div class="summary-card">
-
-                    <div class="summary-header">
-                        <span>Plan Completion</span>
-                        <span>92%</span>
-                    </div>
-
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width:92%;"></div>
-                    </div>
-
-                </div>
-
-                <!-- Load -->
-                <div class="summary-card">
-
-                    <div class="summary-header">
-                        <span>Training Load</span>
-                        <span>🟢 Optimal</span>
-                    </div>
-
-                    <small>Within the planned range for this week.</small>
-
-                </div>
-
-            </aside>
-
         </section>
 
+        <!-- ==========================================
+            KPI SUMMARY
+        ========================================== -->
+        <section class="activities-summary">
+            <div class="kpi-card">
+                <span class="kpi-label">Activites</span>
+                <h2 class="kpi-value">142</h2>
+            </div>
+
+            <div class="kpi-card">
+
+                <span class="kpi-label">Hours</span>
+                <h2 class="kpi-value">328 h</h2>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <span class="kpi-label">Distance</span>
+                <h2 class="kpi-value">8,420 km</h2>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <span class="kpi-label">Elevation</span>
+                <h2 class="kpi-value">112,300 m</h2>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <span class="kpi-label">TSS</span>
+                <h2 class="kpi-value">13,250</h2>
+
+            </div>
         </section>
 
+        <!-- ==========================================
+                ACTIVITIES
+        ========================================== -->
+        <section class="activites-list">
+            <!-- Activity -->
+            <a href="#" class="activity-card">
+                <div class="activity-left">
+                    <div class="activity-icon">
+                        <i data-lucide="bike"></i>
+                    </div>
 
+                    <div class="activity-info">
+                        <h3 class="activity-title">Long Ride</h3>
+                        <span>Saturday · 18 July 2026</span>
+                    </div>
+
+                </div>
+
+                <div class="activity-metrics">
+
+                    <span class="metric-badge">
+                        <i data-lucide="map"></i>
+                        95 km
+                    </span>
+
+                    <span class="metric-badge">
+                        <i data-lucide="mountain"></i>
+                        1450 m
+                    </span>
+
+                    <span class="metric-badge">
+                        <i data-lucide="clock-3"></i>
+                        3h 12m
+                    </span>
+
+                    <span class="metric-badge">
+                        <i data-lucide="heart"></i>
+                        146 bpm
+                    </span>
+
+                    <span class="metric-badge">
+                        <i data-lucide="zap"></i>
+                        228 W
+                    </span>
+
+                    <span class="metric-badge">
+                        <i data-lucide="activity"></i>
+                        185 TSS
+                    </span>
+
+                </div>
+
+                <div class="activity-arrow">
+                    <i data-lucide="chevron-right"></i>
+                </div>
+            </a>
+        </section>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/calendar.js"></script>
 
 </body>
 
