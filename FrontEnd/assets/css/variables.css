@@ -46,6 +46,25 @@
 --color-surface-muted: rgba(15, 23, 42, 0.015);
 
 /* ==========================================
+   EVENT PRIORITIES
+========================================== */
+
+/* A Race (Red / Orange) */
+--priority-a: #DC2626;
+--priority-a-bg: rgba(220, 38, 38, 0.10);
+--priority-a-border: rgba(220, 38, 38, 0.25);
+
+/* B Race (Blue) */
+--priority-b: var(--color-primary);
+--priority-b-bg: rgba(37, 99, 235, 0.10);
+--priority-b-border: rgba(37, 99, 235, 0.25);
+
+/* C Race (Green) */
+--priority-c: #059669;
+--priority-c-bg: rgba(5, 150, 105, 0.10);
+--priority-c-border: rgba(5, 150, 105, 0.25);
+
+/* ==========================================
    LIGHT THEME
 ========================================== */
 

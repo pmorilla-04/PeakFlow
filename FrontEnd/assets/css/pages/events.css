@@ -1,0 +1,316 @@
+/* ==========================================
+   FILTERS
+========================================== */
+
+/* ==========================================
+   EVENTS FILTERS
+========================================== */
+
+.events-filters{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-8);
+
+    margin-bottom: var(--space-8);
+
+}
+
+.filters-left{
+
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+
+    flex: 1;
+
+}
+.filters-right{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: var(--space-4);
+
+    flex-shrink: 0;
+
+}
+
+.filters-right .search-form{
+
+    width: 280px;
+
+}
+
+.filter-select{
+
+    height: 42px;
+
+    padding: 0 var(--space-4);
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    color: var(--text-primary);
+
+    font-size: var(--text-sm);
+
+    cursor: pointer;
+
+}
+
+.primary-btn{
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: var(--space-2);
+
+    min-width: 140px;
+    height: 42px;
+
+    padding: 0 var(--space-5);
+
+    border-radius: var(--radius-lg);
+
+    cursor: pointer;
+
+}
+
+.primary-btn:hover{
+
+    transform: translateY(-1px);
+
+}
+  
+/* ==========================================
+   SUMMARY
+========================================== */
+
+.events-summary{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    gap: var(--space-5);
+
+    margin-bottom: var(--space-8);
+
+}
+
+/* ==========================================
+   EVENTS LIST
+========================================== */
+
+.events-list{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+}
+
+/* ==========================================
+   EVENT CARD
+========================================== */
+
+.event-card{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--space-5);
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: var(--transition-fast);
+
+}
+
+.event-card:hover{
+
+    transform: translateY(-2px);
+
+    border-color: var(--color-primary);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.event-left{
+
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-4);
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.event-icon{
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(249,115,22,.10);
+
+    border-radius: 50%;
+
+    color: var(--color-accent);
+
+}
+
+.event-icon svg{
+
+    width:20px;
+    height:20px;
+
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.event-info{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+.event-title{
+
+    font-size: var(--text-lg);
+
+    font-weight: var(--font-semibold);
+
+}
+
+.event-date{
+
+    font-size: var(--text-sm);
+
+    color: var(--text-secondary);
+
+}
+
+/* ==========================================
+   DETAILS
+========================================== */
+
+.event-details{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: var(--space-3);
+
+}
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.event-badge{
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-full);
+
+    font-size: var(--text-xs);
+
+    font-weight: var(--font-medium);
+
+    color: var(--text-secondary);
+
+}
+
+/* ==========================================
+   PRIORITIES
+========================================== */
+
+.priority-a{
+
+    background: var(--priority-a-bg);
+
+    color: var(--priority-a);
+
+    border-color: var(--priority-a-border);
+
+}
+
+.priority-b{
+
+    background: var(--priority-b-bg);
+
+    color: var(--priority-b);
+
+    border-color: var(--priority-b-border);
+
+}
+
+.priority-c{
+
+    background: var(--priority-c-bg);
+
+    color: var(--priority-c);
+
+    border-color: var(--priority-c-border);
+
+}
+
+/* ==========================================
+   ARROW
+========================================== */
+
+.event-arrow{
+
+    color: var(--text-secondary);
+
+}
+
+.event-arrow svg{
+
+    width:20px;
+    height:20px;
+
+}

@@ -150,6 +150,35 @@ body{
     color: var(--text-secondary);
 }
 
+.sidebar-footer-actions{
+
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+
+    border-top: 1px solid var(--border);
+
+}
+
+.logout-btn{
+
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.logout-btn:hover{
+
+    color: var(--color-danger);
+
+    background-color: var(--color-danger-bg);
+
+}
+
 /* ==========================================
    KPI GRID
 ========================================== */
