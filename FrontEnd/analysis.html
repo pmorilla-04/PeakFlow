@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="assets/css/utilities.css" />
 
     <!-- Page CSS -->
-    <link rel="stylesheet" href="assets/css/pages/events.css" />
+    <link rel="stylesheet" href="assets/css/pages/analysis.css">
 </head>
 
 <body>
@@ -63,21 +63,21 @@
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link active">
+                    <a href="events.html" class="nav-link">
                         <i data-lucide="flag"></i>
                         <span>Events</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="activities.html" class="nav-link ">
+                    <a href="#" class="nav-link">
                         <i data-lucide="bike"></i>
                         <span>Activities</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="analysis.html" class="nav-link">
+                    <a href="#" class="nav-link active">
                         <i data-lucide="chart-column"></i>
                         <span>Analysis</span>
                     </a>
@@ -143,13 +143,15 @@
             </div>
         </div>
     </aside>
-    <main class="main">
+
+
+    <section class="main">
         <header class="header">
             <!--Left-->
             <div class="header-left">
                 <div class="page-title">
-                    <h1>Events</h1>
-                    <p>Manage your races and important events</p>
+                    <h1>Analysis</h1>
+                    <p>Explore your training insights and trends</p>
                 </div>
             </div>
 
@@ -192,240 +194,191 @@
         </header>
 
         <!-- ==========================================
-        FILTERS
+        ANALYSIS FILTERS
         ========================================== -->
-        <section class="events-filters">
+
+        <section class="analysis-filters">
+
             <div class="filters-left">
                 <select class="filter-select">
                     <option>All Sports</option>
                     <option>Road Cycling</option>
                     <option>MTB</option>
                     <option>Running</option>
+                    <option>Gym</option>
                     <option>Ski</option>
                 </select>
 
                 <select class="filter-select">
-                    <option>2026</option>
-                    <option>2025</option>
-                    <option>2024</option>
-                </select>
-
-                <select class="filter-select">
-                    <option>All Events</option>
-                    <option>Upcoming</option>
-                    <option>Completed</option>
+                    <option>Last 7 Days</option>
+                    <option>Last 30 Days</option>
+                    <option>Last 90 Days</option>
+                    <option>This Year</option>
+                    <option>All Time</option>
                 </select>
             </div>
 
             <div class="filters-right">
 
                 <form class="search-form">
+
                     <i data-lucide="search"></i>
-                    <input type="text" placeholder="Search event..." />
+
+                    <input type="text" placeholder="Search metric...">
+
                 </form>
 
-                <button class="primary-btn">
-                    <i data-lucide="plus"></i>
-                    <span>Add Event</span>
-                </button>
-
             </div>
+
         </section>
 
-        <section class="events-summary">
+        <section class="analysis-summary">
+
             <div class="kpi-card">
-                <span class="kpi-label">Upcoming</span>
-                <h2 class="kpi-value">5</h2>
+
+                <span class="kpi-label">Fitness</span>
+
+                <h2 class="kpi-value">72</h2>
+
             </div>
 
             <div class="kpi-card">
-                <span class="kpi-label">Completed</span>
-                <h2 class="kpi-value">12</h2>
+
+                <span class="kpi-label">Fatigue</span>
+
+                <h2 class="kpi-value">65</h2>
+
             </div>
 
             <div class="kpi-card">
-                <span class="kpi-label">A Races</span>
-                <h2 class="kpi-value">2</h2>
+
+                <span class="kpi-label">Form</span>
+
+                <h2 class="kpi-value">+7</h2>
+
             </div>
 
             <div class="kpi-card">
-                <span class="kpi-label">Season Progress</span>
-                <h2 class="kpi-value">58%</h2>
+
+                <span class="kpi-label">FTP</span>
+
+                <h2 class="kpi-value">310 W</h2>
+
             </div>
+
         </section>
 
-        <section class="events-list">
+        <section class="analysis-grid">
 
-            <a href="event.html" class="event-card">
+            <div class="analysis-card">
 
-                <div class="event-left">
+                <h3>Fitness & Form</h3>
 
-                    <div class="event-icon">
+                <div class="chart-placeholder">
 
-                        <i data-lucide="flag"></i>
-
-                    </div>
-
-                    <div class="event-info">
-
-                        <h3 class="event-title">
-                            Marxa Purito
-                        </h3>
-
-                        <span class="event-date">
-                            17 August 2026
-                        </span>
-
-                    </div>
+                    Chart
 
                 </div>
 
-                <div class="event-details">
+            </div>
 
-                    <span class="event-badge">
-                        Road
-                    </span>
+            <div class="analysis-card">
 
-                    <span class="event-badge">
-                        105 km
-                    </span>
+                <h3>Training Load</h3>
 
-                    <span class="event-badge">
-                        4,800 m
-                    </span>
+                <div class="chart-placeholder">
 
-                    <span class="event-badge priority-a">
-                        A Race
-                    </span>
-
-                    <span class="event-badge">
-                        31 days left
-                    </span>
+                    Chart
 
                 </div>
 
-                <div class="event-arrow">
+            </div>
 
-                    <i data-lucide="chevron-right"></i>
+            <div class="analysis-card">
 
-                </div>
+                <h3>Heart Rate</h3>
 
-            </a>
+                <div class="chart-placeholder">
 
-            <a href="event.html" class="event-card">
-
-                <div class="event-left">
-
-                    <div class="event-icon">
-
-                        <i data-lucide="flag"></i>
-
-                    </div>
-
-                    <div class="event-info">
-
-                        <h3 class="event-title">
-                            Sea otther
-                        </h3>
-
-                        <span class="event-date">
-                            20 Setmber 2026
-                        </span>
-
-                    </div>
+                    Chart
 
                 </div>
 
-                <div class="event-details">
+            </div>
 
-                    <span class="event-badge">
-                        MTB
-                    </span>
+            <div class="analysis-card">
 
-                    <span class="event-badge">
-                        89 km
-                    </span>
+                <h3>Power</h3>
 
-                    <span class="event-badge">
-                        2,700 m
-                    </span>
+                <div class="chart-placeholder">
 
-                    <span class="event-badge priority-b">
-                        A Race
-                    </span>
-
-                    <span class="event-badge">
-                        65 days left
-                    </span>
+                    Chart
 
                 </div>
 
-                <div class="event-arrow">
-
-                    <i data-lucide="chevron-right"></i>
-
-                </div>
-
-            </a>
-
-            <a href="event.html" class="event-card">
-
-                <div class="event-left">
-
-                    <div class="event-icon">
-
-                        <i data-lucide="flag"></i>
-
-                    </div>
-
-                    <div class="event-info">
-
-                        <h3 class="event-title">
-                            Terra remences
-                        </h3>
-
-                        <span class="event-date">
-                            10 May 2027
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <div class="event-details">
-
-                    <span class="event-badge">
-                        Road
-                    </span>
-
-                    <span class="event-badge">
-                        160 km
-                    </span>
-
-                    <span class="event-badge">
-                        2,600 m
-                    </span>
-
-                    <span class="event-badge priority-c">
-                        A Race
-                    </span>
-
-                    <span class="event-badge">
-                        150 days left
-                    </span>
-
-                </div>
-
-                <div class="event-arrow">
-
-                    <i data-lucide="chevron-right"></i>
-
-                </div>
-
-            </a>
+            </div>
 
         </section>
-    </main>
+
+        <section class="records-card">
+
+            <h2>Personal Bests</h2>
+
+            <div class="records-grid">
+
+                <div class="record">
+
+                    <span>FTP</span>
+
+                    <strong>310 W</strong>
+
+                </div>
+
+                <div class="record">
+
+                    <span>20 min</span>
+
+                    <strong>287 W</strong>
+
+                </div>
+
+                <div class="record">
+
+                    <span>5 min</span>
+
+                    <strong>360 W</strong>
+
+                </div>
+
+                <div class="record">
+
+                    <span>Sprint</span>
+
+                    <strong>1012 W</strong>
+
+                </div>
+
+                <div class="record">
+
+                    <span>Longest Ride</span>
+
+                    <strong>241 km</strong>
+
+                </div>
+
+                <div class="record">
+
+                    <span>Elevation</span>
+
+                    <strong>4,960 m</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>

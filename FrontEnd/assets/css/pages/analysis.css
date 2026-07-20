@@ -1,0 +1,211 @@
+/* ==========================================
+   FILTER SELECT
+========================================== */
+
+.filter-select{
+
+    height: 42px;
+
+    min-width: 180px;
+
+    padding: 0 var(--space-4);
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    color: var(--text-primary);
+
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+
+    cursor: pointer;
+
+    transition: var(--transition-fast);
+
+}
+
+.filter-select:hover{
+
+    border-color: var(--color-primary);
+
+}
+
+.filter-select:focus{
+
+    outline: none;
+
+    border-color: var(--color-primary);
+
+    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+
+}
+
+/* ==========================================
+   ANALYSIS FILTERS
+========================================== */
+.analysis-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-4);
+
+    margin-bottom: var(--space-6);
+}
+
+.filters-left,
+.filters-right {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-4);
+}
+
+/* ==========================================
+   KPI SUMMARY
+========================================== */
+.analysis-summary {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: var(--space-6);
+
+    margin-bottom: var(--space-6);
+}
+
+/* ==========================================
+   ANALYSIS GRID
+========================================== */
+.analysis-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: var(--space-6);
+
+    margin-bottom: var(--space-6);
+}
+
+/* ==========================================
+   ANALYSIS CARD
+========================================== */
+.analysis-card {
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    padding: var(--space-6);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.analysis-card h3 {
+
+    margin-bottom: var(--space-5);
+
+    font-size: var(--text-lg);
+
+    font-weight: var(--font-semibold);
+
+    color: var(--text-primary);
+
+}
+
+/* ==========================================
+   CHART PLACEHOLDER
+========================================== */
+
+.chart-placeholder {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 280px;
+
+    border: 2px dashed var(--border);
+
+    border-radius: var(--radius-lg);
+
+    background-color: var(--background);
+
+    color: var(--text-secondary);
+
+    font-size: var(--text-sm);
+
+}
+
+/* ==========================================
+   PERSONAL BESTS
+========================================== */
+
+.records-card {
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    padding: var(--space-6);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.records-card h2{
+
+    margin-bottom: var(--space-6);
+
+}
+
+.records-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-5);
+
+}
+
+.record{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-2);
+
+    padding: var(--space-5);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    background-color: var(--background);
+
+}
+
+.record span{
+
+    color: var(--text-secondary);
+
+    font-size: var(--text-sm);
+
+}
+
+.record strong{
+
+    font-size: var(--text-xl);
+
+    font-weight: var(--font-bold);
+
+    color: var(--text-primary);
+
+}
