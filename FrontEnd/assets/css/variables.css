@@ -33,14 +33,16 @@
 --color-primary: #2563EB;
 --color-secondary: #10B981;
 --color-accent: #F97316;
---color-danger: #EF4444;
 
-/* Report Labels */
+/* ==========================================
+   SEMANTIC COLORS
+========================================== */
 
---color-ai: #7C3AED;
---color-premium: #F97316;
 --color-success: #059669;
---color-recommended: var(--color-primary);
+--color-warning: #F97316;
+--color-danger: #EF4444;
+--color-info: #2563EB;
+--color-ai: #7C3AED;
 /* ==========================================
    STATE COLORS
 ========================================== */
