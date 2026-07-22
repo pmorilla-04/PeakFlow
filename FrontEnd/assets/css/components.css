@@ -452,3 +452,116 @@
     box-shadow: 0 0 0 3px rgba(37,99,235,.12);
 
 }
+
+
+/* ==========================================
+   SWITCH
+========================================== */
+
+.switch{
+
+    position: relative;
+
+    display: inline-block;
+
+    width: 52px;
+
+    height: 30px;
+
+}
+
+.switch input{
+
+    opacity: 0;
+
+    width: 0;
+
+    height: 0;
+
+}
+
+.slider{
+
+    position: absolute;
+
+    inset: 0;
+
+    background-color: var(--border);
+
+    border-radius: var(--radius-full);
+
+    cursor: pointer;
+
+    transition: var(--transition-fast);
+
+}
+
+.slider::before{
+
+    content: "";
+
+    position: absolute;
+
+    left: 4px;
+
+    top: 4px;
+
+    width: 22px;
+
+    height: 22px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    transition: var(--transition-fast);
+
+}
+
+.switch input:checked + .slider{
+
+    background-color: var(--color-primary);
+
+}
+
+.switch input:checked + .slider::before{
+
+    transform: translateX(22px);
+
+}
+
+/* ==========================================
+   DANGER ZONE
+========================================== */
+
+.danger-btn{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: var(--space-2);
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-danger);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: var(--transition-fast);
+
+}
+
+.danger-btn:hover{
+
+    opacity: .9;
+
+}
